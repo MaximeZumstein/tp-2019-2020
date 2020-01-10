@@ -392,6 +392,6 @@ module.exports = {
 
   },
 
-
+  redis_url: process.env.REDIS_URL,
 
 };
