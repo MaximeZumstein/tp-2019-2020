@@ -1,5 +1,7 @@
 ## TP noté 2019-2020
 
+[![Build Status](https://travis-ci.com/MaximeZumstein/tp-2019-2020.svg?branch=master)](https://travis-ci.com/MaximeZumstein/tp-2019-2020)
+
 ### How to start
 
 First time you're starting the application, install the dependencies:
