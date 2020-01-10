@@ -5,3 +5,5 @@ node_js:
 before_script: 
   - npm install -g sails
   - npm install
+  - npm install --save-dev mocha
+  - npm install --save-dev supertest
