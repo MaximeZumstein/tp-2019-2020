@@ -33,7 +33,7 @@ module.exports = {
   },
 
   create: async function(req, res) {
-    await Sentences.create({ sentence: req.param('sentence') });
+    await Sentences.create({ sentence: req.param('sentence'), email: req.param('email')  });
     return res.redirect('/say');
   },
 };
