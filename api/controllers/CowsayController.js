@@ -33,8 +33,9 @@ module.exports = {
   },
 
   create: async function(req, res) {
-    await Sentences.create({ sentence: req.param('sentence'), email: req.param('email')  });
-    await Jobs.create("sendEmail",{email: req.param('email') }).save();
+    const obj = { sentence: req.param('sentence'), email: req.param('email')  };
+    await Sentences.create(obj);
+    await Jobs.create("sendEmail", obj).save();
     return res.redirect('/say');
   },
 };
