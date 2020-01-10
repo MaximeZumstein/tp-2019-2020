@@ -23,3 +23,5 @@ services:
       POSTGRES_USER: moi
       POSTGRES_PASSWORD: biniou
       POSTGRES_DB: cowsay
+    ports:
+      - 5432:5432
